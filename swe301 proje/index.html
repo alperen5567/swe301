@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ATM Cash Withdrawal</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+
+</head>
+
+<body>
+
+    <div class="atm-screen">
+
+        <h2>ATM Cash Withdrawal</h2>
+
+        <form id="withdrawal-form">
+
+            <label for="amount">Enter Amount:</label>
+
+            <input type="number" id="amount" name="amount" min="1" required="yes">
+
+            <span class="error-message" id="error-message"></span>
+
+            <button onclick="withdrawCash(); return false;" type="button">Withdraw</button>
+
+        </form>
+
+        <div id="success-message" class="success-success-message"></div>
+
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html> 
+
+
